@@ -243,7 +243,7 @@ for (let i = 0; i < count_bullet_t.length; i++) {
 }
 else {
     let cid = self.crypto.getRandomValues(new BigUint64Array(1))[0];
-    localStorage.setItem("ahmad-script-uid", cid);
+    localStorage.setItem("ahmad_script_uid", cid);
     SETITEM(cid);
     hideLoader();
 }
