@@ -1,4 +1,4 @@
-    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
 
 * {
@@ -190,7 +190,8 @@ background: var(--chats_bg);
     top: 101px;
     left: 226px;
     text-align: center;
-color: var(--chats_fg);
+    background: var(--chats_bg);
+    color: var(--chats_fg);
     border-radius: 25px;
     font-size: 12px;
     line-height: 18px;
