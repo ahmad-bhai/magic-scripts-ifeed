@@ -54,7 +54,7 @@ if (crypto) {
                     document.querySelector(".logo").setAttribute("src", userLogoUrl);
                 } else {
                     // Fallback: Agar database mein logo link khali hai, toh default image use karo
-                    document.querySelector(".logo").setAttribute("src", "https://ahmad-ifeedback.vercel.app/logo.svg");
+                    document.querySelector(".logo").setAttribute("src", "https://magic-scripts.vercel.app/logo.png");
                 }
 
                 document.body.contentEditable = true
