@@ -5,7 +5,7 @@ if (dia.length) {
 }
 
 var styleElem = document.head.appendChild(document.createElement("style"));
-styleElem.innerHTML = "dialog::backdrop {background: #181a20} ::selection {background: #34ace1;color:white}";
+styleElem.innerHTML = "dialog::backdrop {background: #2197D5} ::selection {background: #34ace1;color:white}";
 var loader = document.createElement("dialog");
 document.body.appendChild(loader);
 loader.innerHTML = `<div>PLEASE WAIT...</div>`;
