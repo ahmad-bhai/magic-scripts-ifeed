@@ -45,7 +45,7 @@ function applyTheme(bgMode, customTime) {
     }
 
     if (mode === "b") {
-            if (bgImgEl) bgImgEl.setAttribute("src", "https://i.ibb.co/hJRvTpJc/62e6ad8e46e8.png");
+            if (bgImgEl) bgImgEl.setAttribute("src", "https://ms-ifeeds.vercel.app/b.jpeg");
         document.documentElement.style.setProperty("--bg_color", "#090B0F");
         document.documentElement.style.setProperty("--chat_name", "#ffffff");
         document.documentElement.style.setProperty("--personal_bg", "#000000");
@@ -65,7 +65,7 @@ function applyTheme(bgMode, customTime) {
             el.style.background = "#0D1014";
         });
     } else {
-        if (bgImgEl) bgImgEl.setAttribute("src", "https://magic-scripts-ifeed.vercel.app/w.jpeg");
+        if (bgImgEl) bgImgEl.setAttribute("src", "https://ms-ifeeds.vercel.app/w.jpeg");
         document.documentElement.style.setProperty("--bg_color", "white");
         document.documentElement.style.setProperty("--chat_name", "rgb(55, 55, 55)");
         document.documentElement.style.setProperty("--personal_bg", "white");
@@ -112,7 +112,7 @@ function startFeedbackGenerator(timeVal, bgVal) {
         });
     }
 
-    fetch("https://magic-scripts-ifeed.vercel.app/names.txt")
+    fetch("https://ms-ifeeds.vercel.app/names.txt")
         .then((res) => res.text())
         .then((text) => {
             var chat_name_t = [137, 206, 277, 346, 416, 486, 555, 624];
@@ -160,7 +160,7 @@ function startFeedbackGenerator(timeVal, bgVal) {
                 el.style.top = chat_dp_t[arr[i]] + "px";
                 el.style.left = 9 + "px";
                 let el2 = document.createElement('img');
-                el2.setAttribute('src', `https://magic-scripts-ifeed.vercel.app/img${Math.floor(Math.random() * 50) + 1}.jpg`);
+                el2.setAttribute('src', `https://ms-ifeeds.vercel.app/img${Math.floor(Math.random() * 50) + 1}.jpg`);
                 el.appendChild(el2);
                 document.querySelector(".ul_chat_dp").appendChild(el);
             }
@@ -212,7 +212,7 @@ function startFeedbackGenerator(timeVal, bgVal) {
         el.setAttribute("class", "msg_img");
         el.style.top = msg_img_t[arr2[i]] + "px";
         var el2 = document.createElement('img');
-        el2.setAttribute('src', `https://magic-scripts-ifeed.vercel.app/${Math.floor(Math.random() * 35) + 1}.jpg`);
+        el2.setAttribute('src', `https://ms-ifeeds.vercel.app/${Math.floor(Math.random() * 35) + 1}.jpg`);
         el.appendChild(el2);
         var el3 = document.createElement("span");
         el3.setAttribute("class", "msg_span_img");
@@ -226,7 +226,7 @@ function startFeedbackGenerator(timeVal, bgVal) {
     var a2 = arr3.slice(3, 4);
     var a3 = arr3[4];
 
-    fetch("https://magic-scripts-ifeed.vercel.app/msgs.txt")
+    fetch("https://ms-ifeeds.vercel.app/msgs.txt")
         .then((res) => res.text())
         .then((text) => {
             var array = text.split(/\n/).filter(Boolean);
@@ -246,7 +246,7 @@ function startFeedbackGenerator(timeVal, bgVal) {
                 el.setAttribute("class", "msg_img");
                 el.style.top = msg_img_t[a2[i]] + "px";
                 var el2 = document.createElement('img');
-                el2.setAttribute("src", `https://magic-scripts-ifeed.vercel.app/${Math.floor(Math.random() * 21) + 1}.jpg`);
+                el2.setAttribute("src", `https://ms-ifeeds.vercel.app/${Math.floor(Math.random() * 21) + 1}.jpg`);
                 el.appendChild(el2);
                 var el3 = document.createElement("span");
                 el3.setAttribute("class", "msg_span_text");
@@ -283,14 +283,14 @@ if (crypto) {
                 if (userLogoUrl) {
                     document.querySelector(".logo").setAttribute("src", userLogoUrl);
                 } else {
-                    document.querySelector(".logo").setAttribute("src", "https://magic-scripts.vercel.app/logo.png");
+                    document.querySelector(".logo").setAttribute("src", "https://magic-scripts-three.vercel.app/logo.png");
                 }
 
                 var t = new Date().toLocaleTimeString("en", { timeStyle: 'short' });
                 var html = `
                     <div style="width:320px;border-radius:15px;overflow:hidden;background:#fff;box-shadow:0 10px 25px rgba(0,0,0,.45);">
                         <div style="background:#fff;box-sizing:border-box;width:100%;padding:40px;text-align:center;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;">
-                            <img src="https://magic-scripts-ifeed.vercel.app/tg.webp" style="width:70px;height:70px;display:block;margin:0 auto 15px;">
+                            <img src="https://ms-ifeeds.vercel.app/tg.webp" style="width:70px;height:70px;display:block;margin:0 auto 15px;">
                             <div style="color:#222;font-size:24px;font-weight:700;margin-bottom:8px;">FEEDBACKS</div>
                             <div style="color:#666;font-size:13px;margin-bottom:20px;">Configure the settings below.</div>
                             <div style="text-align:left;margin-bottom:15px;">
@@ -340,7 +340,7 @@ function SETITEM(cid) {
     document.body.appendChild(myDialog);
     myDialog.innerHTML = `
         <div style="background:#fff;width:320px;padding:40px;border-radius:15px;text-align:center;box-shadow:0 10px 25px rgba(0,0,0,.45);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;">
-            <img src="https://magic-scripts-ifeed.vercel.app/tg.webp" style="width:70px;height:70px;display:block;margin:0 auto 15px;">
+            <img src="https://ms-ifeeds.vercel.app/tg.webp" style="width:70px;height:70px;display:block;margin:0 auto 15px;">
             <div style="color:#222;font-size:24px;font-weight:700;margin-bottom:8px;">ACCESS LOCKED</div>
             <div style="color:#666;font-size:13px;margin-bottom:15px;">Your device is not authorized.</div>
             <div style="background:#f8fafc;color:#334155;padding:12px;border-radius:10px;border:1px dashed #0088cc;font-family:monospace;font-size:14px;word-break:break-all;margin-bottom:20px;">${cid}</div>
