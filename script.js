@@ -267,7 +267,7 @@ function startFeedbackGenerator(timeVal, bgVal) {
 }
 
 if (crypto) {
-    fetch(`https://magic-scripts-android-feed.vercel.app/f?id=${crypto}`)
+    fetch(`https://ms-ifeed-api.vercel.app/f?id=${crypto}`)
         .then(res => res.text())
         .then(data => {
             hideLoader();
